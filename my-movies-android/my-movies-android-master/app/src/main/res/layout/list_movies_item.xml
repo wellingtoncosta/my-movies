@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/movieImage"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            app:actualImageScaleType="centerCrop"
+            app:failureImage="@drawable/no_image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/list_item_padding"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/list_primary_text" />
+
+            <TextView
+                android:id="@+id/movieGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/list_item_padding"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/list_secondary_text" />
+
+            <TextView
+                android:id="@+id/movieYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/list_item_padding"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/list_secondary_text" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/favoriteButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_favorite_border"
+            android:contentDescription="@string/no_movies" />
+
+    </LinearLayout>
+
+</LinearLayout>

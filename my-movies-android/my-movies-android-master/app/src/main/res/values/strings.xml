@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Meus Filmes</string>
+    <string name="confirm_password">Confirmar Senha</string>
+    <string name="different_password">Senha diferente</string>
+    <string name="email">E-mail</string>
+    <string name="favorite_movies">Filmes Favoritos</string>
+    <string name="field_required">Campo obrigatório</string>
+    <string name="invalid_email">E-mail inválido</string>
+    <string name="loading">Carregando&#8230;</string>
+    <string name="login">Login</string>
+    <string name="login_account">Entrar</string>
+    <string name="logout">Sair</string>
+    <string name="logout_failure">Não foi possível efetuar o logout.</string>
+    <string name="movies">Filmes</string>
+    <string name="my_favorite_movies">Meus Favoritos</string>
+    <string name="my_movies">Meus Filmes</string>
+    <string name="name">Nome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="new_user_label">Novo usuário? Cadastre-se agora!</string>
+    <string name="no_favorite_movies">Sem filmes favoritos</string>
+    <string name="no_internet_connection">Sem conexão com a internet</string>
+    <string name="no_movies">Sem filmes cadastrados</string>
+    <string name="password">Senha</string>
+    <string name="register_new_user">Novo Usuário</string>
+    <string name="register">Cadastrar</string>
+    <string name="save_data_local_failure">Não foi possível salvar os dados no dispositivo.</string>
+    <string name="server_communication_error">Não foi possível se conectar com o servidor.</string>
+    <string name="server_error">Houve uma falha no servidor.</string>
+</resources>

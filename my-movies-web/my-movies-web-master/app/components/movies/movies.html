@@ -1,0 +1,37 @@
+<div ng-cloak>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2 flex md-truncate>Meus Filmes</h2>
+      <md-button class="md-icon-button" aria-label="Logout" ng-click="ctrl.logout()">
+        <md-icon md-icon-font="material-design-icon">exit_to_app</md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-content md-scroll-y layout="column" flex>
+    <div layout-padding layout="row" layout-wrap layout-align="center center">
+      <div ng-repeat="movie in ctrl.movies">
+        <md-card>
+          <img ng-src="{{ movie.imageUrl }}" class="md-card-image img" alt="Imagem do Filme">
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">{{ movie.title }}</span>
+              <span class="md-subhead">Gênero: {{ movie.genre }}</span>
+              <span class="md-subhead">Ano: {{ movie.year }}</span>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-actions layout="row" layout-align="center center">
+            <md-button aria-label="Deletar" ng-click="ctrl.deleteMovie(movie)">
+              <md-icon md-icon-font="material-design-icon">delete</md-icon>
+            </md-button>
+          </md-card-actions>
+        </md-card>
+      </div>
+    </div>
+
+    <md-button class="md-fab md-fab-bottom-right scroll-fab" ng-click="ctrl.addNewMovie()">
+      <md-tooltip md-direction="top">Adicionar Novo Filme</md-tooltip>
+      <md-icon md-icon-font="material-design-icon">add</md-icon>
+    </md-button>
+  </md-content>
+</div>

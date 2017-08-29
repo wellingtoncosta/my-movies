@@ -1,0 +1,22 @@
+.loginBox {
+  max-width:  90%;
+  width: 500px;
+  margin-top: 5%;
+}
+
+.stretch input  {
+  width: 100%
+}
+
+.md-button {
+    text-transform: capitalize !important;
+}
+
+.img {
+    height: 330px; 
+    width: 270px;
+}
+
+.md-fab.scroll-fab {
+  position: fixed !important;
+}

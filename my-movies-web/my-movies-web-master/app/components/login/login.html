@@ -1,0 +1,37 @@
+<div layout="column" layout-align="center center" layout-fill="layout-fill">
+  <div class="loginBox md-whiteframe-z1" layout="column">
+
+    <md-toolbar>
+      <h2 class="md-toolbar-tools"><span>Meus Filmes - Login</span></h2>
+    </md-toolbar>
+
+    <form name="loginForm">
+      <md-content class="md-padding" layout="column">
+        <md-input-container>
+		      <label>E-mail</label>
+		      <input name="email" type="email" ng-model="user.email" required>
+		      <div ng-messages="loginForm.email.$error">
+	            <div ng-message="required">Este campo é obrigatório.</div>
+	        </div>
+		    </md-input-container>
+
+        <md-input-container>
+		      <label>Senha</label>
+		      <input name="password" type="password" ng-model="user.password" required>
+		      <div ng-messages="loginForm.password.$error">
+	            <div ng-message="required">Este campo é obrigatório.</div>
+	        </div>
+        </md-input-container>
+
+        <div layout="row" layout-align="center center">
+          <md-button 
+            class="md-raised md-primary"
+            ng-disabled="loginForm.$invalid"
+            ng-click="ctrl.login(user)">
+            Entrar
+          </md-button>
+        </div>
+      </md-content>
+    </form>
+  </div>
+</div>

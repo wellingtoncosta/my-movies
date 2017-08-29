@@ -1,0 +1,56 @@
+<div ng-cloak>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button" aria-label="Voltar" ng-click="ctrl.backToMovies()">
+        <md-icon md-icon-font="material-design-icon">arrow_back</md-icon>
+      </md-button>
+      <h2 flex md-truncate>Cadastrar Novo Filme</h2>
+    </div>
+  </md-toolbar>
+
+  <form name="newMovieForm">
+    <md-content class="md-padding" md-scroll-y layout="column" flex>
+      <md-input-container>
+		      <label>Título</label>
+		      <input name="title" type="text" ng-model="movie.title" required>
+		      <div ng-messages="newMovieForm.title.$error">
+	            <div ng-message="required">Este campo é obrigatório.</div>
+	        </div>
+		    </md-input-container>
+
+        <md-input-container>
+		      <label>Gênero</label>
+		      <input name="genre" type="text" ng-model="movie.genre" required>
+		      <div ng-messages="newMovieForm.genre.$error">
+	            <div ng-message="required">Este campo é obrigatório.</div>
+	        </div>
+        </md-input-container>
+
+        <md-input-container>
+		      <label>Ano de Lançamento</label>
+		      <input name="year" type="text" ng-model="movie.year" required>
+		      <div ng-messages="newMovieForm.year.$error">
+	            <div ng-message="required">Este campo é obrigatório.</div>
+	        </div>
+        </md-input-container>
+
+        <md-input-container>
+		      <label>URL da Imagem</label>
+		      <input name="imageUrl" type="url" ng-model="movie.imageUrl" required>
+		      <div ng-messages="newMovieForm.imageUrl.$error">
+	            <div ng-message="required">Este campo é obrigatório.</div>
+              <div ng-message="url">URL inválida.</div>
+	        </div>
+        </md-input-container>
+
+        <div layout="row" layout-align="center center">
+          <md-button
+            class="md-raised md-primary"
+            ng-disabled="newMovieForm.$invalid"
+            ng-click="ctrl.saveNewMovie(movie)">
+            Salvar
+          </md-button>
+        </div>
+    </md-content>
+  </form>
+</div>
