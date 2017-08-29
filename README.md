@@ -4,6 +4,6 @@ A simple application to register and favorite movies, built using some technolog
 
 ## Guides
 
-- [Web API](#web-api)
-- [Web Application](#web-application)
-- [Android Application](#android-application)
+- [Android Application](https://github.com/WellingtonCosta/my-movies/blob/master/my-movies-android/README.md)
+- [Web Application](https://github.com/WellingtonCosta/my-movies/blob/master/my-movies-web/README.md)
+- [Web API](https://github.com/WellingtonCosta/my-movies/blob/master/my-movies-api/README.md)
