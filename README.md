@@ -1,6 +1,6 @@
 # my-movies
 
-A simple application to register and favorite movies, built using some technologies such as Java with Spring Boot, AngularJS and Android.
+A simple application to register and favorite movies, built using Java with Spring Boot, AngularJS and Android.
 
 ## Guides
 
